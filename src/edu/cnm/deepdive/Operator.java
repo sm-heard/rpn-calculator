@@ -39,4 +39,6 @@ public enum Operator {
   public String toString() {
     return token;
   }
+
+  //TODO Add operate method w/ switch (later version will use @Override.
 }
