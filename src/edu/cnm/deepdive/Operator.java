@@ -27,17 +27,14 @@ public enum Operator {
     this.token = token;
   }
 
-  /**
-   *Exercises the Operator enum by printing all the of the enumerated values (as array)
-   * @param args command line args ignored
-   */
-  public static void main(String[] args) {
-    System.out.println(Arrays.toString(Operator.values()));
-  }
 
   @Override
   public String toString() {
     return token;
+  }
+
+  public static String tokenPattern(){
+    return "(?:^|\\s)(\\+|\\-|\\/|\\*|\\^|\\%|sqrt)(?:\\s|$)";
   }
 
   //TODO Add operate method w/ switch (later version will use @Override.
